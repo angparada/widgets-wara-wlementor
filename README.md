@@ -1,2 +1,2 @@
-# widgets-wara-wlementor
+# widgets-para-wlementor
 Widgets para Elementor
