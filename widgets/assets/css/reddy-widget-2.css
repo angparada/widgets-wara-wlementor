@@ -1,0 +1,375 @@
+.elementor-row {
+  display: flex;
+  column-gap: 24px;
+  row-gap: 24px;
+}
+
+.elementor-row .element-thumbnails-col {
+  display: flex;
+  column-gap: 24px;
+  row-gap: 24px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.elementor-row .element-thumbnail-swiper {
+  width: 100%;
+  max-width: 73px;
+  min-width: 73px;
+  height: 287px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .elementor-row .element-thumbnail-swiper {
+    display: flex;
+    height: 511px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .elementor-row .element-thumbnail-swiper {
+    display: flex;
+  }
+}
+
+.elementor-row .element-thumbnail-swiper .swiper-slide {
+  width: 100%;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  border: 1px solid rgba(105, 105, 105, 0.50);
+  background: #696969;
+  cursor: pointer;
+}
+
+.elementor-row .element-thumbnail-swiper .swiper-slide.swiper-slide-thumb-active {
+  opacity: 0.5;
+}
+
+.elementor-row .element-thumbnail-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.elementor-row .element-image-swiper {
+  width: 100%;
+  max-width: 100%;
+  height: 287px;
+  --swiper-navigation-color: #fff;
+  --swiper-pagination-color: #fff;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .elementor-row .element-image-swiper {
+    max-width: calc(100% - 73px);
+    height: 511px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .elementor-row .element-image-swiper {
+    max-width: calc(100% - 73px);
+  }
+}
+
+.elementor-row .element-image-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  height: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.elementor-row .element-image-swiper .swiper-slide .swiper-slide-content {
+  width: 100%;
+  padding: 21px 21px;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.elementor-row .element-image-swiper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.elementor-row .element-image-swiper .elementor-button {
+  border-radius: 12px;
+  background-color: #FED15F;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.10);
+  z-index: 1;
+  padding: 12px 23px;
+}
+
+@media (min-width: 768px) {
+  .elementor-row .element-image-swiper .elementor-button {
+    padding: 18px 31px;
+  }
+}
+
+.elementor-row .element-image-swiper .elementor-button .elementor-button-text {
+  color: #696969;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .elementor-row .element-image-swiper .elementor-button .elementor-button-text {
+    font-size: 16px;
+    line-height: 19.92px;
+  }
+}
+
+.elementor-row .element-thumbnails-col  .swiper-pagination {
+  bottom: 15px;
+}
+
+@media (min-width: 1024px) {
+  .elementor-row .element-thumbnails-col  .swiper-pagination {
+    display: none;
+  }
+}
+
+.elementor-row .element-thumbnails-col .swiper-pagination span {
+  color: #696969;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 1;
+}
+.elementor-row .element-thumbnails-col .swiper-pagination  .swiper-pagination-current {
+  font-weight: 700;
+}
+
+.elementor-row .element-thumbnails-col .swiper-pagination  .swiper-pagination-total {
+  font-weight: 300;
+}
+
+.elementor-row .element-thumbnails-col .swiper-button-next,
+.elementor-row .element-thumbnails-col .swiper-button-prev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36px;
+  height: 36px;
+  background-color: #FED15F;
+}
+
+@media (min-width: 1024px) {
+  .elementor-row .element-thumbnails-col .swiper-button-next,
+  .elementor-row .element-thumbnails-col .swiper-button-prev {
+    display: none;
+  }
+}
+
+.elementor-row .element-thumbnails-col .swiper-button-next svg,
+.elementor-row .element-thumbnails-col .swiper-button-prev svg {
+  width: 15px;
+  height: 15px;
+}
+
+.elementor-row .element-thumbnails-col .swiper-button-next svg path,
+.elementor-row .element-thumbnails-col .swiper-button-prev svg path {
+  fill: #1C1B1F;
+}
+
+.elementor-row .element-thumbnails-col .swiper-button-next::after,
+.elementor-row .element-thumbnails-col .swiper-button-prev::after {
+  content: '';
+}
+
+.elementor-row .element-thumbnails-col .swiper-button-next {
+  right: 0;
+}
+
+.elementor-row .element-thumbnails-col .swiper-button-prev {
+  left: 0;
+}
+
+.elementor-widget-product-gallery-modal {
+  display: flex;
+  pointer-events: none;
+  background-color: transparent;
+  -webkit-user-select: auto;
+  -moz-user-select: auto;
+  user-select: auto;
+}
+
+.elementor-widget-product-gallery-modal {
+  justify-content: center;
+  align-items: center;
+  pointer-events: all;
+  background-color: #91B4CD9C;
+}
+
+.elementor-modal-dialog {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.8);
+  z-index: 9999;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.elementor-modal-dialog .dialog-widget-content {
+  background-color: #CCB395;
+  position: absolute;
+  border-radius: 30px;
+  box-shadow: 2px 8px 23px 3px rgba(0,0,0,.2);
+  overflow: hidden;
+}
+
+.elementor-modal-dialog .dialog-widget-content .dialog-lightbox-message {
+  padding: 55px 24px 49px 24px;
+}
+
+.elementor-widget-product-gallery-modal .dialog-widget-content {
+  width: 100%;
+  max-width: 95%;
+}
+
+@media (min-width: 1024px) {
+  .elementor-widget-product-gallery-modal .dialog-widget-content {
+    max-width: 994px;
+  }
+}
+
+.elementor-widget-product-gallery-modal.elementor-popup-modal .dialog-message {
+  width: 100%;
+}
+
+.elementor-widget-product-gallery-modal .element-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 26px;
+  row-gap: 26px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .elementor-widget-product-gallery-modal .element-grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 59px;
+    row-gap: 59px;
+  }
+}
+.elementor-widget-product-gallery-modal .element-grid-image {
+  width: 100%;
+  max-width: 558px;
+  height: 287px;
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .elementor-widget-product-gallery-modal .element-grid-image {
+    max-width: 558px;
+    height: 511px;
+  }
+}
+
+.elementor-widget-product-gallery-modal .element-grid-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.elementor-widget-product-gallery-modal .elementor-heading-text {
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 29px;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .elementor-widget-product-gallery-modal .elementor-heading-text {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+
+.elementor-widget-product-gallery-modal .element-description, .elementor-widget-product-gallery-modal p {
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.7px;
+}
+
+.elementor-widget-product-gallery-modal.elementor-popup-modal .dialog-close-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.elementor-widget-product-gallery-modal .swiper-button-next, 
+.elementor-widget-product-gallery-modal .swiper-button-prev {
+  width: 60px;
+  height: 60px;
+  background-color: #FED15F;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  line-height: 24px;
+  color: #1C1B1F;
+}
+
+.elementor-widget-product-gallery-modal .swiper-button-next::after, 
+.elementor-widget-product-gallery-modal .swiper-button-prev::after {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.elementor-widget-product-gallery-modal .swiper-button-prev {
+  left: 0;
+}
+
+.elementor-widget-product-gallery-modal .swiper-button-next {
+  right: 0;
+}
+
+
+.elementor-widget-product-gallery-modal .swiper-slide {
+  height: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.elementor-widget-product-gallery-modal {
+  position: fixed !important;
+}
+
+.element-grid-swiper {
+  height: 100%;
+}
